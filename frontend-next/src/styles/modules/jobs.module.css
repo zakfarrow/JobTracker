@@ -1,0 +1,9 @@
+.feedContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.itemContainer {
+    display: flex;
+    flex-direction: column;
+}

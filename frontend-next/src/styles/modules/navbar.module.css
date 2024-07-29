@@ -1,0 +1,17 @@
+.container {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.item {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.active {
+    color: var(--secondary-color);
+}

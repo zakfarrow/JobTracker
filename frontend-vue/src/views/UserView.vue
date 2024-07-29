@@ -1,6 +1,5 @@
 <template>
     <div>
-        <h1>Profile Overview</h1>
         <Sidebar />
     </div>
 </template>

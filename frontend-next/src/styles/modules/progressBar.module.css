@@ -1,0 +1,81 @@
+.container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: auto;
+  justify-content: center;
+}
+
+.stepContainer {
+  display: flex;
+  margin: auto;
+  padding: 0;
+  column-gap: 100px;
+  list-style-type: none;
+}
+
+.item {
+  padding: 0;
+  position: relative;
+}
+
+.circle {
+  display: block;
+  border-radius: 100%;
+  border: 1px solid rgba(144, 174, 174, 0.5);
+  padding: 10px;
+  background-color: var(--background-color);
+  cursor: pointer;
+}
+
+.barBase {
+  position: absolute;
+  width: 90%;
+  height: 5px;
+  z-index: -1;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #e5e5e5;
+}
+
+.barSection {
+  width: 0%;
+  height: 5px;
+  z-index: -1;
+  background-color: #01c0ae;
+}
+
+.barFill {
+  animation: nextStep 1.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.light {
+  opacity: 0.5;
+}
+
+.active {
+  border-color: #01c0ae;
+}
+
+@keyframes nextStep {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 33%;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(33, 131, 221, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(33, 131, 221, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(33, 131, 221, 0);
+  }
+}

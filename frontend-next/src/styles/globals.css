@@ -1,0 +1,14 @@
+:root {
+  --primary-color: #90aeae;
+  --secondary-color: #e74833;
+  --accent-color: #874f42;
+  --background-color: #ffffff;
+  --text-color: #34677b;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Other global styles */
